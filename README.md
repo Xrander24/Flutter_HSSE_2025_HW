@@ -9,4 +9,4 @@
 ![image](https://github.com/user-attachments/assets/c558afce-a41a-43f6-b7aa-4d701ee03d41)
 ![image](https://github.com/user-attachments/assets/f4597868-85a4-46db-bdd3-76b4b2293f30)
 
-## Ссылка на apk
+## [Ссылка на apk](https://github.com/Xrander24/Flutter_HSSE_2025_HW/raw/refs/heads/main/app-release.apk)
