@@ -1,12 +1,37 @@
 # hsse_cat_tinder
 
-Проект КотоТиндер представляет собой приложение по просмотру 'анкет' котов разных пород. Анкеты можно лайкать или дизлайкать, как с помощью свайпов, так и с помощью отдельных кнопок.
-Поддержан просмотр полного описания породы при нажатии на фото кота.
+Проект КотоТиндер представляет собой приложение по просмотру 'анкет' котов разных пород. Анкеты можно лайкать или дизлайкать, как с помощью свайпов, так и с помощью отдельных кнопок. Также можно просмотреть список ранее лайкнутых котов.
+
+## Структура 
+
+- `lib/data` -- Работа с данными
+- `lib/domain` -- Доменный слой (бизнес-логика)
+- `lib/presentation` -- Слой представления (UI + логика отображения)
+- `di.dart` -- Подключение зависимостей
+- `main.dart` -- Запуск приложения
+
+
+## Фичи
+- Реализована аватарка для приложения через пакет `flutter_launcher_icons`
+- Реализована карточка кота, которую можно свапать вправо (лайк) и влево (дизлайк) через пакет `flutter_card_swiper`. Так же можно просто нажать на кнопки лайка и дизлайка. Кнопки сделаны через `StatelessWidget`
+- Код отформатирован с помощь `dart format`
+- Подключен и используется `flutter_lint` (в pubspec.yaml и analysis_options.yaml)
+- Команда `flutter analyze` выполняется успешно без проблем
+- Зависимости подключаются с помощью `get_it` в `di.dart`
+- Экран лайкнутых котиков отображает список с изображением, породой и датой лайка. На этом экране возможна фильтрация по породе. Есть возможность удаления карточки из списка.
+- При длительной загрузке приложение показывает `progress bar` через `CircularProgressIndicator`.
+- Использовал `AlertDialog` для отображения ошибки сети.
+- Управление состоянием через `Cubit` для всех экранов. 
 
 ## Интерфейс
-![image](https://github.com/user-attachments/assets/709ed765-eda3-4a4b-9443-366858791dec)
-![image](https://github.com/user-attachments/assets/53907111-d92b-48eb-8e1e-0d1972aa343a)
-![image](https://github.com/user-attachments/assets/c558afce-a41a-43f6-b7aa-4d701ee03d41)
-![image](https://github.com/user-attachments/assets/f4597868-85a4-46db-bdd3-76b4b2293f30)
+![image](https://github.com/user-attachments/assets/1a9b5ac9-8935-41b7-8607-0388c95b371d)
+![image](https://github.com/user-attachments/assets/8260b487-dcb1-4d4b-b646-61c8c596b9e6)
+![image](https://github.com/user-attachments/assets/854dc1c6-0e8b-4602-bb48-94946795866c)
+![image](https://github.com/user-attachments/assets/0db444d4-27e3-49b0-96fe-614a015525b2)
+![image](https://github.com/user-attachments/assets/535ec530-ca8b-4e68-be3d-606e95173945)
+![image](https://github.com/user-attachments/assets/491fb595-524d-4df5-b3b3-58b166481e52)
+![image](https://github.com/user-attachments/assets/c6f8dc96-f6a3-4280-b667-af89b9b1f627)
 
-## [Ссылка на apk](https://github.com/Xrander24/Flutter_HSSE_2025_HW/raw/refs/heads/main/app-release.apk)
+
+## [Ссылка на apk первой версии](https://github.com/Xrander24/Flutter_HSSE_2025_HW/raw/refs/heads/main/app-release.apk)
+## [Cсылка на apk второй версии](https://github.com/Xrander24/Flutter_HSSE_2025_HW/raw/refs/heads/main/app-release_2.0.apk)
