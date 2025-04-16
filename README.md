@@ -24,13 +24,13 @@
 - Управление состоянием через `Cubit` для всех экранов. 
 
 ## Интерфейс
-![image](https://github.com/user-attachments/assets/1a9b5ac9-8935-41b7-8607-0388c95b371d)
-![image](https://github.com/user-attachments/assets/8260b487-dcb1-4d4b-b646-61c8c596b9e6)
-![image](https://github.com/user-attachments/assets/854dc1c6-0e8b-4602-bb48-94946795866c)
-![image](https://github.com/user-attachments/assets/0db444d4-27e3-49b0-96fe-614a015525b2)
-![image](https://github.com/user-attachments/assets/535ec530-ca8b-4e68-be3d-606e95173945)
-![image](https://github.com/user-attachments/assets/491fb595-524d-4df5-b3b3-58b166481e52)
-![image](https://github.com/user-attachments/assets/c6f8dc96-f6a3-4280-b667-af89b9b1f627)
+<img src="https://github.com/user-attachments/assets/1a9b5ac9-8935-41b7-8607-0388c95b371d" width="200" height="480">
+<img src="https://github.com/user-attachments/assets/8260b487-dcb1-4d4b-b646-61c8c596b9e6" width="200" height="480">
+<img src="https://github.com/user-attachments/assets/854dc1c6-0e8b-4602-bb48-94946795866c" width="200" height="480">
+<img src="https://github.com/user-attachments/assets/0db444d4-27e3-49b0-96fe-614a015525b2" width="200" height="480">
+<img src="https://github.com/user-attachments/assets/535ec530-ca8b-4e68-be3d-606e95173945" width="200" height="480">
+<img src="https://github.com/user-attachments/assets/491fb595-524d-4df5-b3b3-58b166481e52" width="200" height="480">
+<img src="https://github.com/user-attachments/assets/c6f8dc96-f6a3-4280-b667-af89b9b1f627" width="200" height="480">
 
 
 ## [Ссылка на apk первой версии](https://github.com/Xrander24/Flutter_HSSE_2025_HW/raw/refs/heads/main/app-release.apk)
