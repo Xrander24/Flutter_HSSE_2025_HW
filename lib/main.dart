@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import './cat_swipe_screen.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hsse_cat_tinder/di.dart';
+import 'package:hsse_cat_tinder/presentation/cubits/home_cubit.dart';
+import 'package:hsse_cat_tinder/presentation/cubits/liked_cubit.dart';
+import 'package:hsse_cat_tinder/presentation/screens/home_screen.dart';
 
 void main() {
+  setupDI();
   runApp(CatApp());
 }
 
@@ -10,9 +15,16 @@ class CatApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: CatSwipeScreen(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<LikedCubit>(create: (_) => getIt<LikedCubit>()),
+        BlocProvider<HomeCubit>(create: (_) => getIt<HomeCubit>()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Cat Tinder',
+        home: const HomeScreen(),
+      ),
     );
   }
 }
